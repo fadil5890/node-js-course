@@ -25,17 +25,3 @@ readFile('./module-intro/first.txt', 'utf-8', (err,result) => {
     })
 });
 console.log('start the next task')
-// readFile('./module-intro/second.txt', 'utf-8');
-
-// writeFile(
-//     './module-intro/result-writefileasync.js',
-//     `console.log('Here is the result : ${first}, ${second}');`
-//     );
-    
-    
-// writeFile(
-//     './module-intro/result-writefileasync.js',
-//     `
-// console.log('Here is the replacement');`,
-//     {flag : 'a'}
-//     );
