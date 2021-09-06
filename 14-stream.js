@@ -8,7 +8,7 @@ server.on('request', (req, res) => {
     // res.end(text)
     const fileStream = fs.createReadStream('./module-intro/big-file.txt', 'utf-8')
     fileStream.on( 'open', () => {
-        fileStream.pipe(res)
+        fileStream.pipe(res) // pipe() - write data into chunks
     })
     fileStream.on( 'error', (err) => {
         console.log(err);
